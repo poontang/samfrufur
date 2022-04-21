@@ -29,6 +29,12 @@ body, html {
   left: 10px;
 }
 
+.bottomright{
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
 .middle {
   position: absolute;
   top: 50%;
@@ -50,19 +56,23 @@ hr {
 <body>
 
 <div class="bgimg">
+  <div class="topleft">
+    <img src="logo.png" alt="Girl in a jacket" width="250">
+  </div>
   <div class="middle">
-    <h1>Coming Soon</h1></br><h3>Samfrufru International Airport</h3>
-    <hr>
-    <p id="demo" style="font-size:30px"></p>
+    <h3>Opening in:</h3><p id="demo" style="font-size:30px"></p>
   </div>
   <div class="bottomleft">
-    <p>&nbsp;&nbsp;&nbsp;Copyright Sydrex Development and pipe breaking 2022</p>
+    <p><a href="press.html">Press Releases</a></p>
+  </div>
+  <div class="bottomright">
+    <p>&copy; 2022 Sydrex Development</p>
   </div>
 </div>
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("April 20, 2069 04:20:00").getTime();
+var countDownDate = new Date("April 20, 2024 04:20:00").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
